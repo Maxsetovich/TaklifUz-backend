@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TaklifUz.DataAccess\TaklifUz.DataAccess.csproj" />
+  </ItemGroup>
+
 </Project>
