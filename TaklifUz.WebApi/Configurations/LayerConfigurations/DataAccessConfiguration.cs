@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using TaklifUz.DataAccess.DbContexts;
+using TaklifUz.DataAccess.Interfaces;
+using TaklifUz.DataAccess.Repositories;
 
 namespace TaklifUz.WebApi.Configurations.LayerConfigurations;
 
@@ -11,5 +13,7 @@ public static class DataAccessConfiguration
 
         builder.Services.AddDbContext<AppDbContext>(options =>
             options.UseSqlServer(connectionString));
+
+        builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
     }
 }

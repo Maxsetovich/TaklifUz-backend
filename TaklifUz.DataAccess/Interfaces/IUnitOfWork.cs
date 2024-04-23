@@ -1,0 +1,31 @@
+﻿using TaklifUz.DataAccess.DbContexts;
+using TaklifUz.DataAccess.Interfaces.Admins;
+using TaklifUz.DataAccess.Interfaces.Categories;
+using TaklifUz.DataAccess.Interfaces.Orders;
+using TaklifUz.DataAccess.Interfaces.Products;
+using TaklifUz.DataAccess.Interfaces.Users;
+
+namespace TaklifUz.DataAccess.Interfaces;
+
+public interface IUnitOfWork
+{
+    // Admins
+    public IAdminRepository Admins { get; }
+    
+    // Users
+    public IUserRepository Users { get; }
+
+    // Categories
+    public ICategoryRepository Categories { get; }
+
+    // Orders
+    public IOrderRepository Orders { get; }
+    public IOrderDetailRepository OrderDetails { get; }
+
+    // Products
+    public IProductRepository Products { get; }
+    public IProductCommentRepository ProductComments { get; }
+    public IProductImageRepository ProductImages { get; }
+
+    public Task<int> SaveChangeAsync();
+}
