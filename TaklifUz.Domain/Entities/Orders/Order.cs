@@ -11,4 +11,5 @@ public class Order : Auditable
     public double TotalPrice { get; set; }
 
     public IList<OrderDetail> OrderDetails { get; set; } = new List<OrderDetail>();
+    public IList<Thread> Threads { get; set; } = new List<Thread>();
 }

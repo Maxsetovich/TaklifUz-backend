@@ -10,4 +10,11 @@
     <ProjectReference Include="..\TaklifUz.DataAccess\TaklifUz.DataAccess.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Dtos\Admins\" />
+    <Folder Include="Dtos\Users\" />
+    <Folder Include="Dtos\Products\" />
+    <Folder Include="Dtos\Orders\" />
+  </ItemGroup>
+
 </Project>

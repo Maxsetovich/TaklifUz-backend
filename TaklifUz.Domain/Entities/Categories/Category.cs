@@ -6,6 +6,6 @@ public class Category : Auditable
 {
     public string Name { get; set; } = String.Empty;
     public string Description { get; set; } = String.Empty;
-
+    public string ImagePath { get; set; } = String.Empty;
     public IList<Product> Products { get; set; } = new List<Product>();
 }

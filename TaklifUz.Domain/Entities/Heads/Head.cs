@@ -1,8 +1,6 @@
-﻿using TaklifUz.Domain.Entities.Threads;
+﻿namespace TaklifUz.Domain.Entities.Heads;
 
-namespace TaklifUz.Domain.Entities.Admins;
-
-public class Admin : Auditable
+public class Head : Auditable
 {
     public string FirstName { get; set; } = String.Empty;
     public string LastName { get; set; } = String.Empty;
@@ -14,7 +12,5 @@ public class Admin : Auditable
     public double Wallet { get; set; }
     public string PasswordHash { get; set; } = String.Empty;
     public string Salt { get; set; } = String.Empty;
-    public string Role { get; set; } = "Admin";
-
-    public IList<ProductLink> Links { get; set; } = new List<ProductLink>();
+    public string Role { get; set; } = "Head";
 }
