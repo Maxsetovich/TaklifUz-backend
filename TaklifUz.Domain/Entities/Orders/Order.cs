@@ -1,4 +1,5 @@
-﻿using TaklifUz.Domain.Entities.Users;
+﻿using TaklifUz.Domain.Entities.Threads;
+using TaklifUz.Domain.Entities.Users;
 
 namespace TaklifUz.Domain.Entities.Orders;
 
@@ -11,5 +12,5 @@ public class Order : Auditable
     public double TotalPrice { get; set; }
 
     public IList<OrderDetail> OrderDetails { get; set; } = new List<OrderDetail>();
-    public IList<Thread> Threads { get; set; } = new List<Thread>();
+    public IList<ProductThread> ProductThreads { get; set; } = new List<ProductThread>();
 }

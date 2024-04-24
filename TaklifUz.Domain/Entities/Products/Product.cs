@@ -16,5 +16,5 @@ public class Product : Auditable
     public IList<ProductImage> ProductImages { get; set; } = new List<ProductImage>();
     public IList<ProductComment> ProductComments { get; set; } = new List<ProductComment>();
     public IList<OrderDetail> OrderDetails { get; set; } = new List<OrderDetail>();
-    public IList<ProductLink> Links { get; set; } = new List<ProductLink>();
+    public IList<ProductLink> ProductLinks { get; set; } = new List<ProductLink>();
 }

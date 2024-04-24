@@ -16,5 +16,5 @@ public class Admin : Auditable
     public string Salt { get; set; } = String.Empty;
     public string Role { get; set; } = "Admin";
 
-    public IList<ProductLink> Links { get; set; } = new List<ProductLink>();
+    public IList<ProductLink> ProductLinks { get; set; } = new List<ProductLink>();
 }

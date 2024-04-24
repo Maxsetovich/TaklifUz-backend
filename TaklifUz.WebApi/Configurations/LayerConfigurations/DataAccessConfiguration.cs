@@ -12,7 +12,7 @@ public static class DataAccessConfiguration
         string connectionString = builder.Configuration.GetConnectionString("DatabaseConnectionString")!;
 
         builder.Services.AddDbContext<AppDbContext>(options =>
-            options.UseSqlServer(connectionString));
+            options.UseNpgsql(connectionString));
 
         builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
     }

@@ -5,7 +5,7 @@ namespace TaklifUz.Domain.Entities.Threads;
 
 public class ProductLink : Auditable
 {
-    public long adminId { get; set; }
+    public long AdminId { get; set; }
     public Admin? Admin { get; set; }
 
     public long ProductId { get; set; }
@@ -14,5 +14,5 @@ public class ProductLink : Auditable
     public string Name { get; set; } = String.Empty;
     public string UrlLink { get; set; } = String.Empty;
 
-    public IList<ProductThread> Threads { get; set; } = new List<ProductThread>();
+    public IList<ProductThread> ProductThreads { get; set; } = new List<ProductThread>();
 }
